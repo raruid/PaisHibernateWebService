@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 07-mar-2020 14:35:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Clases.Pais" table="pais" catalog="practicaad" optimistic-lock="version">
+        <id name="idPais" type="java.lang.Integer">
+            <column name="id_pais" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="65535" />
+        </property>
+        <property name="zonaHoraria" type="string">
+            <column name="zona_horaria" length="65535" />
+        </property>
+        <property name="continente" type="string">
+            <column name="continente" length="65535" />
+        </property>
+    </class>
+</hibernate-mapping>
